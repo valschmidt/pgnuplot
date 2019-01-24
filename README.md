@@ -19,7 +19,7 @@ with "::" symbols to delimit each set of arguments.
 
 File Arguments: 
 For each data file we need to specify two columns to plot.  We do this
-with the "C" flag, for example, Cc#[N]_c#[N]l, where N is the column
+with the `C` flag, for example, `Cc#[N]_c#[N]l`, where '_' delimited the specification for the x and y axis, respbtrively, `c#[N]` is the column
 number starting with zero and counting from left to right.  The "C"
 flag is extremely flexible as each of the c#[N} expressions above can
 be any valid perl string with c#[N] to specify appropriate references
@@ -60,5 +60,5 @@ Self explainitory:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDE2NTA4OTc4XX0=
+eyJoaXN0b3J5IjpbLTE0NjI2MDMzOTZdfQ==
 -->
