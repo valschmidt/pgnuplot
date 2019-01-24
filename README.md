@@ -5,10 +5,9 @@ pgnuplot.pl is a front end script to add functionality to gnuplot.
 
 Here is an example to illustrate:
 
-    pgnuplot.pl -fCc#[2]_c#[4]:D,:Pdots:datafile.dat::Cc#[5]*c#[6]_c#[7]/100:Ppoints
-:datafile_2.dat -t"Plot Title" -p"Xaxis Label" -q"Y axis Label"
+    pgnuplot.pl -fCc#[2]_c [4]:D,:Pdots:datafile.dat::Cc#[5]*c#[6]_c#[7]/100:Ppoints :datafile_2.dat -t"Plot Title" -p"Xaxis Label" -q"Y axis Label"
 
-Lets look at the `-f` argument first:
+Lets look at the `-f` argument first, which specifies files from which to read data:
 
 Data Sets:
 
@@ -60,3 +59,6 @@ Self explainitory:
 -q'Ylabel'
 
 
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNDE2NTA4OTc4XX0=
+-->
