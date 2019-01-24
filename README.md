@@ -18,21 +18,9 @@ many files as we like and think we have memory for by stringing them together
 with "::" symbols to delimit each set of arguments.
 
 File Arguments: 
-For each data file we need to specify two columns to plot.  We do this
-with the `C` flag, for example, `Cc#[N]_c#[N]l`, where '_' delimited the specification for the x and y axis, respbtrively, `c#[N]` is the column
-number starting with zero and counting from left to right.  The "C"
-flag is extremely flexible as each of the c#[N} expressions above can
-be any valid perl string with c#[N] to specify appropriate references
-to a column. In the second file argument list in our example, we plot
-the product of columns 5 and 6 against column 7 divided by 100. If we
-don't specify any columns, the first two columns in our file will be
-taken by default. Alternatively, we can specify just a single column
-to plot by specifying "Cc#[N]_#".
+For each data file we need to specify two columns to plot.  We do this with the `-C` flag, for example, `Cc#[N]_c#[N]l`, where '_' delimits the specification for the x and y axis, respectively, `c#[N]` is the column number starting with zero and counting from left to right.  The `-C"`flag is extremely flexible as each of the `c#[N}` expressions above can be any valid perl string with `c#[N]` to specify appropriate references to a column. In the second file argument list in our example, we plot the product of columns 5 and 6 against column 7 divided by 100. If we don't specify any columns, the first two columns in our file will be taken by default. Alternatively, we can specify just a single column to plot by specifying `"Cc#[N]_#"`. Here the second # indicates the line number.
 
-Another useful example is plotting GPS data from a NMEA string, where
-latitude and longitude are in columns 2 and 4 respectively, and
-degrees and minutes are concatinated together - i.e. DDMM.MMMM for LAT
-and DDDMM.MMMM for long.  One could do this by simply converting to
+Another useful example is plotting GPS data from a NMEA string, where latitude and longitude are in columns 2 and 4 respectively, and degrees and minutes are concatinated together - i.e. DDMM.MMMM for LAT and DDDMM.MMMM for long.  One could do this by simply converting to
 decimal degrees on the fly with something like this:
 
 -fCsubstr(c#[4],0,3)+substr(c#[4],3,length(c#[4]))/60_substr(c#[2],0,2)+substr(c
@@ -60,5 +48,5 @@ Self explainitory:
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NjI2MDMzOTZdfQ==
+eyJoaXN0b3J5IjpbLTE0MTUyMzMwMTJdfQ==
 -->
