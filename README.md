@@ -1,6 +1,6 @@
 # pgnuplot
 
-pgnuplot.pl is a front end script to add functionality to gnuplot.
+pgnuplot.pl is a front end script to add on-the-fly functionality to gnuplot.
 ------------------------------------------------------------------
 
 Here is an example to illustrate:
@@ -24,20 +24,21 @@ Another useful example is plotting GPS data from a NMEA string, where latitude a
 
 	-fCsubstr(c#[4],0,3)+substr(c#[4],3,length(c#[4]))/60_substr(c#[2],0,2)+substr(c#[2],2,length(c#[2]))/60
 
-The second optional file argument is a delimiter.  We so this with the "D" flag, for example "D," for a comma delimited file or "D\t" for a tab delimited file. When the "D" flag is not specified, white space is the default.
+The second optional file argument is a delimiter.  We so this with the `D` flag, for example `D,` for a comma delimited file or `D\t` for a tab delimited file. When the `D` flag is not specified, white space is the default.
 
 We may also speicfy the point type to plot with the "P" flag.  Here
 the options are the same as are available in gnuplot - points, dots,
 lines, linespoints, etc.
 
-Each of the file arguments are strung together with :'s as shown above and as we said before, the sets of arguments for each file are strung together with ::.
+Each of the file arguments are strung together with `:`'s as shown above and as we said before, the sets of arguments for each file are strung together with `::`.
 
 Other Arguments:
--t'Title'
--p'Xlabel'
--q'Ylabel'
+
+	-t'Title'
+	-p'Xlabel'
+	-q'Ylabel'
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM0MDY5MjIwXX0=
+eyJoaXN0b3J5IjpbLTEyMjk1MjIyNDFdfQ==
 -->
